@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="Author" content="James Barry" >
+        <meta name="Description" content="Assignement 1" >
+        <meta name="Keywords" content="HTML, CSS, JQuery" >
+
+        <link rel="stylesheet" type="text/css" href="/CSS/style.css" media="screen">
+        <link href="#" rel="SHORTCUT ICON" type="image/x-icon">
+
+        <title>My Interests</title>
+        <style>
+            body {
+                background-image: none;
+                background-color: #112D4E;
+            }
+        </style>
+    </head>
+
+    <body>
+
+    <div class="interestspagebox">
+        <header>
+            <h1 class="interestsh1">Interests for James Barry</h1>
+        </header>
+        <div class="inlinebtn">
+            <button class="btn2" type="button">
+                View main interests for James
+            </button>
+            <button class="btn3">
+                See my other interests
+            </button>
+        </div>
+
+        <div class="maininterests" style="display:none;">
+            <div class="interestspageboxinside">
+                <h2 class="subtitle">Main Interests</h2>
+                <h3>Music:</h3>
+                    <p class="text">
+                        I play guitar in my free time and will bring it up with me to university next week. 
+                        I enjoy listening to the
+                        Red-Hot Chili Peppers and other genres of music. 
+                        I also listen to techno music because it is a very large
+                        genre in Sligo (where I&rsquo;m from).<br>
+                        
+                    <a href="../Images/Resized/concert-min.jpg" target="_blank">
+                        <img src="../Images/Resized/concert-min.jpg" alt="Photograph I took at RHCP Concert" height="350">
+                    </a>
+                    </p>
+                <h3>Exercise:</h3>
+                    <p class="text">
+                        I enjoy regular exercise as I find it calming and a great time to listen to music, 
+                        I also find it helps with my
+                        coding as I can step away from a problem and explore my options in my head as I work out. 
+                    </p>
+                <h3>Cooking:</h3>
+                    <p class="text">
+                        I have worked as a chef for two summers, 
+                        so I have a keen interest in cooking and eating all different
+                        kinds of foods and experimenting with my own dishes for my own enjoyment and the enjoyment of
+                        others. 
+                    </p>
+        </div>
+        </div>
+
+        <div class="otherinterests" style="display:none;">
+            <div class="interestspageboxinside">
+                <h2 class="subtitle">Other Interests</h2>
+                <h3>Gaming:</h3>
+                    <p class="text">
+                        I have spent a lot of my time gaming and while in recent years I have moved away from it I still attempt
+                        to play when I can as I find it both fun and relaxing. I play games like CS:GO, Rust, Valorant, Minecraft
+                        and other smaller story games. 
+                    </p>
+                <h3>Cars:</h3>
+                <p class="text">
+                    I also enjoy cars and working on them, I have always liked cars from a young age as both my parents were rally 
+                    drivers for <abbr title="Sligo Stages Rally">SSR</abbr> and Rally Ireland so i was always subjected to them from a young age. They used to own a red Honda Civic which I still 
+                    can't believe they sold as I was looking at buying one online the other day.<br>
+
+                    <a href="../Images/Resized/rallycar-min.jpg" target="_blank">
+                        <img src="../Images/Resized/rallycar-min.jpg" alt="My parents red Honda Civic" height="300">
+                    </a>
+                </p>
+            </div>
+            </div>
+        
+            <div class="inlinebtn">
+                <button class="btn4" type="button" onclick="topFunction()">
+                    Take me back to the top
+                </button>
+            </div>
+    </div>
+
+
+
+
+        
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+
+        <script>
+        $(document).ready(function() {
+            $(function() {
+            $(".btn2").on("click",function() {
+                $(".maininterests").slideToggle();
+                });
+            });
+            $(function() {
+            $(".btn3").on("click",function() {
+                $(".otherinterests").slideToggle();
+                });
+            });
+            $(".btn4").click(function(){
+                $("html, body").animate({ scrollTop: 0 }, "slow");
+                return false;
+            });
+        });
+
+
+        </script>
+    </body>
+
+</html> 

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="Author" content="James Barry" >
+        <meta name="Description" content="Assignement 1" >
+        <meta name="Keywords" content="HTML, CSS, JQuery" >
+
+        <link href="../Images/Favicon/favicon-16x16.png" rel="SHORTCUT ICON" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="/CSS/style.css" media="screen">
+        <link href="#" rel="SHORTCUT ICON" type="image/x-icon">
+
+        <title>Contact Page</title>
+
+    </head>
+
+    <body class="background">
+        <div class="interestspagebox">
+            <header>
+                <h1 class="interestsh1">Contact Form with Validation</h1>
+            </header>
+        </div>
+
+        <div class="interestspagebox">
+            <header>
+                <h2 class="contacth2">My Details</h2>
+            </header>
+
+            <div class="contactpageboxinside">
+                <form class="contact" target="_parent" id="form">
+                    <label for="firstname">First Name: </label><br>
+                    <input type="text" id="firstname" name="firstname">
+                    <span class="Error" id="firstNameError">Please enter a valid first name (Minimum of 2 Characters)</span><br><br>
+
+                    <label for="lastname">Last Name: </label><br>
+                    <input type="text" id="lastname" name="lastname">
+                    <span class="Error" id="lastNameError">Please enter a valid last name (Minimum of 3 Characters)</span><br><br>
+
+                    <input type="submit">
+                </form>
+            </div>
+        </div>
+    
+
+
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+        <script src="/JS/app.js"></script>   
+    </body>
+
+</html> 
